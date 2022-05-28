@@ -3,8 +3,8 @@ CFLAGS = -Wall -g
 
 all: lab3
 
-lab3: main.o
-		$(CC) $(CFLAGS) menu_heap.o -o lab_heap
+lab3: menu_set.o
+		$(CC) $(CFLAGS) menu_set.o -o lab_set
 
-main.o: main.cpp binheap.hpp
-		$(CC) -c menu_heap.cpp -o menu_heap.o
+menu_set.o: menu_set.cpp set.hpp avl.hpp
+		$(CC) -c menu_set.cpp -o menu_set.o

@@ -24,12 +24,18 @@
     <ClInclude Include="binheap.hpp">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="set.hpp">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="menu_heap.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="menu_set.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

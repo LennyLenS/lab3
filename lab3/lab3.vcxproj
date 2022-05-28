@@ -142,10 +142,12 @@
     <ClInclude Include="avl.hpp" />
     <ClInclude Include="binheap.hpp" />
     <ClInclude Include="MakeFile" />
+    <ClInclude Include="set.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu_heap.cpp" />
+    <ClCompile Include="menu_set.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

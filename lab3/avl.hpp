@@ -209,6 +209,16 @@ protected:
 		nodewhere(f, n_tree, p->right);
 		return 0;
 	}
+
+	int nodegetelement(std::vector<Type>* vec, node* p) {
+		if (p == nullptr) {
+			return 0;
+		}
+		vec->push_back(p->key);
+		nodegetelement(vec, p->left);
+		nodegetelement(vec, p->right);
+		return 0;
+	}
 public:
 	AVL() {
 		root = nullptr;
@@ -277,6 +287,12 @@ public:
 		AVL<Type>* new_tree = new AVL<Type>;
 		nodewhere(f, new_tree, this->root);
 		return new_tree;
+	}
+
+	std::vector<Type> getelement() {
+		std::vector<Type> vec;
+		nodegetelement(&vec, this->root);
+		return vec;
 	}
 };
 
