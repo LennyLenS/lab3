@@ -1,0 +1,10 @@
+CC = g++
+CFLAGS = -Wall -g
+
+all: lab3
+
+lab3: main.o
+		$(CC) $(CFLAGS) main.o -o lab_avl
+
+main.o: main.cpp avl.hpp
+		$(CC) -c main.cpp -o main.o
