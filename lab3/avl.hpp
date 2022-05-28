@@ -1,5 +1,5 @@
 #ifndef AVL_HPP
-#define AVK_HPP
+#define AVL_HPP
 #include <string>
 
 template<typename Type>

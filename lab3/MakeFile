@@ -4,7 +4,7 @@ CFLAGS = -Wall -g
 all: lab3
 
 lab3: main.o
-		$(CC) $(CFLAGS) main.o -o lab_avl
+		$(CC) $(CFLAGS) menu_heap.o -o lab_heap
 
-main.o: main.cpp avl.hpp
-		$(CC) -c main.cpp -o main.o
+main.o: main.cpp binheap.hpp
+		$(CC) -c menu_heap.cpp -o menu_heap.o
