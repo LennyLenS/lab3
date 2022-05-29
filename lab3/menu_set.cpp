@@ -122,7 +122,20 @@ int main() {
 				system("pause");
 			}
 			if (position == 5) {
-
+				system("cls");
+				int size = 0;
+				printf("Enter quantity of elements: ");
+				scanf("%d", &size);
+				Set<int>* new_set = new Set<int>;
+				for (int i = 0; i < size; ++i) {
+					int a;
+					printf("Enter element: ");
+					scanf("%d", &a);
+					new_set->add(a);
+				}
+				new_set->Subtraction(p);
+				new_set->Print2();
+				system("pause");
 			}
 			if (position == 6) {
 				p->map(Plus);

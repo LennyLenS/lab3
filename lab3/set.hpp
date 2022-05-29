@@ -55,9 +55,9 @@ public:
 	}
 
 	int sum(Set<Type>* a) {
-		std::vector<Type> val = a->getelement();
+		std::vector<Type> val = a->set->getelement();
 		for (int i = 0; i < val.size(); ++i) {
-			if (!this-.set->->find(val[i])) {
+			if (!this->set->find(val[i])) {
 				this->set->add(val[i]);
 			}
 		}
@@ -65,10 +65,22 @@ public:
 	}
 
 	int Intersection(Set<Type>* a) {
+		std::vector<Type> val = a->set->getelement();
+		AVL<Type>* new_tree = new AVL<Type>;
+		for (int i = 0; i < val.size(); ++i) {
+			if (this->set->find(val[i])) {
+				new_tree->add(val[i]);
+			}
+		}
+		this->set = new_tree;
+		return 0;
+	}
+
+	int Subtraction(Set<Type>* a) {
 		std::vector<Type> val = this->set->getelement();
 		AVL<Type>* new_tree = new AVL<Type>;
 		for (int i = 0; i < val.size(); ++i) {
-			if (a->find(val[i])) {
+			if (!(a->find(val[i]))) {
 				new_tree->add(val[i]);
 			}
 		}
